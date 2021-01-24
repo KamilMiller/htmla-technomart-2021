@@ -5,8 +5,357 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <div>
+        <a href="#">
+          <img src="https://via.placeholder.com/220x68" alt="Логотип Техномарт">
+        </a>
+        <form>
+          <p><input type="search" placeholder="Поиск:">
+          <input type="submit" value="Найти"></p>
+        </form>
+        <span>Закладки:</span>
+        <span>Корзина:</span>
+        <a href="#">Оформть заказ</a>
+      </div>
+      <div>
+        <div>
+          <h1>Техномарт</h1>
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </div>
+        <div>
+          <div>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <div>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          <a href="#">Войти</a>
+          <a href="#">Регистрация</a>
+        </p>
+      </div>
+      <div>
+        <div>
+          <a href="#">
+            <img src="https://via.placeholder.com/20x18" alt="Иконка">Джавшан Рамшутович
+          </a>
+          <a href="#">
+            <img src="https://via.placeholder.com/20x17" alt="Выход">
+          </a>
+        </div>
+        <div>
+          <p>
+            <a href="#">Мои заказы</a>&ensp;&bull;&ensp;<a href="#">Личный кабинет</a>
+          </p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="blank.html">Компания</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a href="blank.html">Новости</a>
+          </li>
+          <li>
+            <a href="blank.html">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="blank.html">Доставка</a>
+          </li>
+          <li>
+            <a href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Товары, услуги и спецпредложения</h2>
+        <ul>
+          <li>
+            <h3>Материалы</h3>
+            <a href="catalog.html">на любой вкус</a>
+          </li>
+          <!-- Здесь метку "New" планирую добавить посредством псевдоэлемента. -->
+          <li>
+            <h3>Инструмент</h3>
+            <a href="catalog.html">на все случаи</a>
+          </li>
+          <li>
+            <h3>Техника</h3>
+            <a href="catalog.html">для стройки</a>
+          </li>
+          <li>
+            <div>
+              <h4>Перфораторы</h4>
+              <img src="https://via.placeholder.com/620x266" alt="Перфораторы">
+              <a href="catalog.html">Открыть каталог</a>
+              <p>Настоящие мужские игрушки</p>
+            </div>
+            <div>
+              <h4>Дрели</h4>
+              <img src="https://via.placeholder.com/620x266" alt="Перфораторы">
+              <a href="catalog.html">Открыть каталог</a>
+              <p>Соседям на радость!</p>
+            </div>
+          </li>
+          <li>
+            <h3>Скидки 50%</h3>
+            <a href="blank.html">на 350 товаров</a>
+          </li>
+          <li>
+            <h3>Доставка</h3>
+            <a href="blank.html">на любой вкус</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div>
+          <h2>Популярные товары:</h2>
+        </div>
+        <div>
+          <button type="batton">Все популярные товары</button>
+        </div>
+        <article>
+          <figure>
+            <p>
+              <img src="https://via.placeholder.com/220x160" alt="Перфоратор BOSCH BFG 9000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <figcaption>Перфоратор BOSCH BFG 9000</figcaption>
+          </figure>
+          <strike>32500 Р.</strike>
+          <div>
+            <span>25500 Р.</span>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div>
+              <span>New</span>
+            </div>
+          </div>
+          <!-- Так как метка "New" может быть у карточки любого из товаров, то я планирую запилить такой блок во все карточки. Потом скрыть те, где эта метка не нужна. Внутренний <div> с надписью внутри думаю повернуть с помощью transform в CSS и скрыть всё, что вылезает за границы внешнего <div> с помощью overflow: hidden. -->
+          <figure>
+            <p>
+              <img src="https://via.placeholder.com/220x160" alt="Перфоратор BOSCH BFG 3000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <figcaption>Перфоратор BOSCH BFG 3000</figcaption>
+          </figure>
+          <strike>22500 Р.</strike>
+          <div>
+            <span>15500 Р.</span>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <p>
+              <img src="https://via.placeholder.com/220x160" alt="Перфоратор BOSCH BFG 6000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <figcaption>Перфоратор BOSCH BFG 6000</figcaption>
+          </figure>
+          <strike>30500 Р.</strike>
+          <div>
+            <span>25500 Р.</span>
+          </div>
+        </article>
+        <article>
+          <div>
+            <div>
+              <span>New</span>
+            </div>
+          </div>
+          <figure>
+            <p>
+              <img src="https://via.placeholder.com/220x160" alt="Перфоратор BOSCH BFG 2000">
+            </p>
+            <button type="button">Купить</button>
+            <button type="button">В закладки</button>
+            <figcaption>Перфоратор BOSCH BFG 2000</figcaption>
+          </figure>
+          <strike>22500 Р.</strike>
+          <div>
+            <span>12500 Р.</span>
+          </div>
+        </article>
+      </section>
+      <section>
+        <div>
+          <h2>Популярные производители:</h2>
+        </div>
+        <div>
+          <button type="batton">Все производители</button>
+        </div>
+        <div>
+          <ul>
+            <li>Bosch</li>
+            <li>Makita</li>
+            <li>DeWalt</li>
+            <li>Интерскол</li>
+            <li>Hitachi</li>
+            <li>LG</li>
+            <li>AEG Power Solutions</li>
+            <li>Metabo</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div>
+          <form>
+            <label>
+              <input type="radio" name="servises" checked>Доставка
+            </label>
+            <label>
+              <input type="radio" name="servises">Гарантия
+            </label>
+            <label>
+              <input type="radio" name="servises">Кредит
+            </label>
+          </form>
+          <div>
+            <h3>Доставка</h3>
+            <div>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
+          </div>
+          <div>
+            <h3>Доставка</h3>
+            <div>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+            </div>
+          </div>
+          <div>
+            <h3>Доставка</h3>
+            <div>
+              <p>Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <a href="blank.html">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Компания &laquo;Техномарт&raquo;</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+          <a href="blank.html">Подробнее о компании</a>
+        </ul>
+      </section>
+      <section>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.15416848626!2d30.32307617166934!3d59.938757647535034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1611508894570!5m2!1sru!2sru" width="300" height="158" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <a href="blank.html">Заблудились? Напишите нам!</a>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <a href="#">
+            <img src="https://via.placeholder.com/220x68" alt="Логотип Техномарт">
+          </a>
+        </div>
+        <div>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="blank.html">Компания</a>
+            </li>
+            <li>
+              <a href="blank.html">Новости</a>
+            </li>
+            <li>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="blank.html">Доставка</a>
+            </li>
+            <li>
+              <a href="blank.html">Контакты</a>
+            </li>
+            <li>
+              <a href="blank.html">Материалы</a>
+            </li>
+            <li>
+              <a href="blank.html">Техника</a>
+            </li>
+            <li>
+              <a href="blank.html">Инструмент</a>
+            </li>
+            <li>
+              <a href="blank.html">Спецпредложения</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+        </div>
+        <div>
+          <a href="#">ВКонтакте</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div>
+          <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        </div>
+        <div>
+          <p>Разработано — <a href="http://www.htmlacademy.ru">htmlacademy.ru</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Окно с формой обратной связи -->
+    <section>
+      <h2>Форма обратной связи</h2>
+      <form>
+        <div>
+          <label>
+            Ваше имя:<br>
+            <input type="text" placeholder="Имя Фамилия" required>
+          </label>
+        </div>
+        <div>
+          <label>
+            Ваш e-mail:<br>
+            <input type="email" placeholder="email@example.com" required>
+          </label>
+        </div>
+        <div>
+          <label>
+            Текст письма:<br>
+            <textarea name="text" placeholder="В свободной форме" required></textarea>
+          </label>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
