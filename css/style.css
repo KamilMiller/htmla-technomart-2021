@@ -72,8 +72,10 @@ img {
 }
 
 .section-title {
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
+  color: var(--basic-blue);
   text-transform: uppercase;
 }
 
@@ -140,14 +142,14 @@ img {
   color: var(--basic-red);
 }
 
-.page-header-phone-number {
+.page-header-phone {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
 }
 
-.page-header-address-text {
+.page-header-address {
   font-style: normal;
   font-size: 14px;
   color: var(--basic-blue);
@@ -187,7 +189,6 @@ img {
 
 /* Секция "Товары и услуги" */
 
-.goods-type-name,
 .offers-name {
   font-weight: bold;
   font-size: 24px;
@@ -195,19 +196,19 @@ img {
   color: var(--basic-white);
 }
 
-.goods-type-item:first-child {
+.offers-item:first-child {
   background-color: var(--basic-yellow);
 }
 
-.goods-type-item:nth-child(2) {
+.offers-item:nth-child(2) {
   background-color: var(--basic-light-blue);
 }
 
-.goods-type-item:nth-child(3) {
+.offers-item:nth-child(3) {
   background-color: var(--basic-crayola);
 }
 
-.offers-item:first-child {
+.offers-item:nth-child(4) {
   background-color: var(--basic-light-green);
 }
 
@@ -215,20 +216,18 @@ img {
   background-color: var(--basic-gold);
 }
 
-.goods-type-link,
 .offers-link {
   background-color: rgb(255, 255, 255, 0.3);
+  font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-white);
 }
 
-.goods-type-link:active,
 .offers-link:active {
   background-color: rgb(169, 169, 169, 0.3);
 }
 
-.goods-type-link:hover,
 .offers-link:hover {
   background-color: rgb(197, 197, 197, 0.3);
 }
@@ -237,8 +236,7 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
-.perforators h4,
-.drills h4 {
+.slide h4 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -246,8 +244,7 @@ img {
   text-transform: uppercase;
 }
 
-.perforators-slogan,
-.drills-slogan {
+.slide-slogan {
   color: var(--basic-white);
 }
 
@@ -355,25 +352,25 @@ img {
 
 /* Сервисы */
 
-.servises {
+.services {
   background-color: var(--basic-very-light-gray);
 }
 
-.servises-name {
+.services-name {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-blue);
   text-transform: uppercase;
 }
 
-.servises-slogan,
-.servises-content {
+.services-slogan,
+.services-content {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   color: var(--basic-black);
 }
 
-.servises-subtitle {
+.services-control {
   background-color: var(--basic-blue);
   font-weight: bold;
   font-size: 21px;
@@ -387,7 +384,7 @@ img {
   color: var(--basic-blue);
 }
 
-.servises-subtitle:not(.active):hover {
+.services-control:not(.active):hover {
   background-color: var(--basic-dark-blue);
 }
 
@@ -438,25 +435,22 @@ img {
   font-style: normal;
 }
 
-.feedback-email-address a,
-.developer-info-text a {
+.developer-link a {
   color: var(--basic-light-orange);
 }
 
-.feedback-email-address a:hover,
-.developer-info-text a:hover {
+.developer-link a:hover {
   text-decoration: underline;
 }
 
-.feedback-email-address a:active,
-.developer-info-text a:active {
+.developer-link a:active {
   text-decoration: none;
   color: var(--basic-red);
 }
 
 /* Окно с формой обратной связи */
 
-.feedback-form-string,
+.feedback-form-field,
 .feedback-form-textarea {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
