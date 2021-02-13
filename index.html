@@ -7,7 +7,8 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -74,26 +75,18 @@
     <main class="container">
       <section class="offers">
         <h2>Товары, услуги и спецпредложения</h2>
-        <ul class="offers-list">
+        <ul class="catalog-topics">
           <li class="offers-item">
             <h3 class="offers-name">Материалы</h3>
-              <a class="offers-link" href="catalog.html">на любой вкус</a>
+            <a class="offers-link" href="catalog.html">на любой вкус</a>
           </li>
           <li class="offers-item">
             <h3 class="offers-name">Инструмент</h3>
-              <a class="offers-link" href="catalog.html">на все случаи</a>
+            <a class="offers-link" href="catalog.html">на все случаи</a>
           </li>
           <li class="offers-item">
             <h3 class="offers-name">Техника</h3>
-              <a class="offers-link" href="catalog.html">для стройки</a>
-          </li>
-          <li class="offers-item">
-            <h3 class="offers-name">Скидки 50%</h3>
-            <a class="offers-link" href="#">на 350 товаров</a>
-          </li>
-          <li class="offers-item">
-            <h3 class="offers-name">Доставка</h3>
-            <a class="offers-link" href="#">на любой вкус</a>
+            <a class="offers-link" href="catalog.html">для стройки</a>
           </li>
         </ul>
         <div class="goods-slider">
@@ -110,6 +103,16 @@
             <p class="slide-slogan">Соседям на радость!</p>
           </div>
         </div>
+        <ul class="offers-list">
+          <li class="offers-item">
+            <h3 class="offers-name">Скидки 50%</h3>
+            <a class="offers-link" href="#">на 350 товаров</a>
+          </li>
+          <li class="offers-item">
+            <h3 class="offers-name">Доставка</h3>
+            <a class="offers-link" href="#">на любой вкус</a>
+          </li>
+        </ul>
       </section>
 
       <section class="popular">
@@ -304,12 +307,12 @@
           <a class="social-fb" href="#">Facebook</a>
           <a class="social-ig" href="#">Instagram</a>
         </div>
-        <div class="developer-link">
+        <div class="feedback-link">
           <p>Обратная связь:
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </div>
-        <div class="developer-link">
+        <div class="feedback-link">
           <p>Разработано —
             <a href="http://www.htmlacademy.ru">htmlacademy.ru</a>
           </p>
@@ -318,7 +321,7 @@
     </footer>
 
     <!-- Окно с формой обратной связи -->
-    <section class="feedback">
+    <section class="feedback-modal">
       <h2 class="feedback-title">Форма обратной связи</h2>
       <form class="feedback-form">
         <label class="feedback-form-string">
