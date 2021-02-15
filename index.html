@@ -17,7 +17,7 @@
     <header class="page-header">
       <div class="upper-row">
         <a class="page-logo" href="#">
-          <img src="img/svg/sitelogo.svg" width="220" height="68" alt="Логотип Техномарт">
+          <img src="img/svg/sitelogomain.svg" width="220" height="68" alt="Логотип Техномарт">
         </a>
         <form class="search-form">
           <input class="search-query-string" type="search" placeholder="Поиск:">
@@ -38,10 +38,10 @@
         </div>
       </div>
 
-      <div class="registration">
-        <p class="registration-buttons">
-          <a class="sign-in" href="#">Войти</a>
-          <a class="sign-up" href="#">Регистрация</a>
+      <div class="profile">
+        <p class="profile-menu">
+          <a class="profile-button sign-in" href="#">Войти</a>
+          <a class="profile-button sign-up" href="#">Регистрация</a>
         </p>
       </div>
 
@@ -72,9 +72,9 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-page-content">
       <section class="offers">
-        <h2>Товары, услуги и спецпредложения</h2>
+        <h2 class="section-title">Товары, услуги и спецпредложения</h2>
         <ul class="catalog-topics">
           <li class="offers-item">
             <h3 class="offers-name">Материалы</h3>
@@ -256,8 +256,8 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <a class="page-logo" href="#">
-          <img src="img/svg/sitelogo.svg" width="220" height="68" alt="Логотип Техномарт">
+        <a class="footer-logo" href="#">
+          <img src="img/svg/sitelogofooter.svg" width="220" height="68" alt="Логотип Техномарт">
         </a>
         <div class="footer-contacts">
           <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -321,9 +321,10 @@
     </footer>
 
     <!-- Окно с формой обратной связи -->
-    <section class="feedback-modal">
-      <h2 class="feedback-title">Форма обратной связи</h2>
-      <form class="feedback-form">
+    <section class="modal feedback-modal">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form class="feedback-form" id="feedback">
         <label class="feedback-form-string">
           Ваше имя:
           <input class="feedback-form-field" type="text" placeholder="Имя Фамилия" required>
@@ -336,9 +337,10 @@
           Текст письма:
           <textarea class="feedback-form-textarea" name="text" placeholder="В свободной форме" required></textarea>
         </label>
-        <button class="button feedback-send" type="submit">Отправить</button>
       </form>
-      <button class="feedback-close" type="button">Закрыть</button>
+      <div class="modal-buttons">
+        <button class="button feedback-send" form="feedback" type="submit">Отправить</button>
+      </div>
     </section>
   </body>
 </html>
