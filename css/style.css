@@ -187,6 +187,12 @@ img {
   color: var(--black);
 }
 
+.profile-options-item {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue);
+}
+
 .profile-button:hover,
 .profile-options-item:hover {
   color: var(--basic-red);
@@ -291,6 +297,7 @@ img {
 
 .buy-button,
 .add-button {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -443,6 +450,11 @@ img {
   text-transform: uppercase;
 }
 
+.breadcrumbs-link,
+.breadcrumbs-link a {
+  color: var(--black);
+}
+
 .section-title-wrapper {
   background-color: var(--basic-grey);
 }
@@ -495,8 +507,9 @@ img {
   color: var(--black);
 }
 
-.pagination-item-current {
+.pagination-item-current a {
   background-color: var(--basic-red);
+  color: var(--white);
 }
 
 .good-desc {
