@@ -28,6 +28,7 @@
   --orange: #FFDA96;
   --crayola: #DC91D8;
   --brown: #F9F5F0;
+  --socials-blue: #212A3A;
 }
 
 /* Глобальные стили */
@@ -472,8 +473,19 @@ img {
 }
 
 .popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 89px;
   margin-bottom: 20px;
+  padding-left: 28px;
+  padding-right: 14px;
+  box-sizing: border-box;
   background-color: var(--brown);
+}
+
+.all-popular-link {
+  box-sizing: border-box;
 }
 
 .goods-item {
@@ -1078,27 +1090,47 @@ img {
   line-height: 18px;
 }
 
+.footer-down-row-inner p {
+  margin: 0;
+}
+
 .copyright-info {
   grid-column: 1 / 2;
 }
 
 .copyright-info,
-.socials,
 .feedback-link-wrapper {
   padding-top: 36px;
 }
 
-.copyright-info p,
-.feedback-link p {
+.copyright-info,
+.feedback-link-wrapper {
   margin-bottom: 30px;
 }
 
 .socials {
+  display: flex;
+  align-items: center;
   grid-column: 2 / 3;
+  padding: 20px 70px;
+  box-sizing: border-box;
 }
 
 .socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  border-radius: 50%;
+  background-color: var(--socials-blue);
   color: var(--white);
+}
+
+.socials a:hover,
+.socials a:active {
+  background-color: var(--basic-red);
 }
 
 .feedback-link-wrapper {
