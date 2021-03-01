@@ -34,7 +34,7 @@
 /* Глобальные стили */
 
 body {
-  min-width: 1200px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   background-color: var(--white);
@@ -78,6 +78,7 @@ img {
   display: block;
   width: 192px;
   padding: 11px 20px 9px 20px;
+  box-sizing: border-box;
   background-color: var(--basic-red);
   text-align: center;
   font-size: 14px;
@@ -478,14 +479,11 @@ img {
   align-items: center;
   min-height: 89px;
   margin-bottom: 20px;
-  padding-left: 28px;
-  padding-right: 14px;
+  padding: 20px 14px 20px 28px;
+  /* padding-left: 28px;
+  padding-right: 14px; */
   box-sizing: border-box;
   background-color: var(--brown);
-}
-
-.all-popular-link {
-  box-sizing: border-box;
 }
 
 .goods-item {
