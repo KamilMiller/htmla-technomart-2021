@@ -850,12 +850,13 @@ img {
 .good-cards-header {
   background-color: var(--biege);
   min-height: 38px;
-  padding: 5px 20px;
+  padding: 5px 15px 5px 20px;
   border-radius: 3px;
 }
 
 .good-cards-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -908,6 +909,13 @@ img {
 .filter-button:active {
   background-color: var(--basic-grey);
   border: 1px solid var(--active-red);
+}
+
+.sort-button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 445px;
 }
 
 .sort-button {
