@@ -856,7 +856,7 @@ img {
 
 .good-cards-header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 20px;
 }
@@ -865,6 +865,7 @@ img {
 .good-cards-name {
   font-weight: normal;
   font-size: 13px;
+  margin-right: auto;
 }
 
 .filter-group-name {
@@ -873,12 +874,31 @@ img {
   line-height: 30px;
 }
 
+.scrollbox {
+  background-color: var(--biege);
+  height: 80px;
+  border-radius: 3px;
+}
+
+.price-bracket {
+  display: flex;
+  justify-content: space-between;
+}
+
 .price-field {
+  width: 95px;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--biege);
+  text-align: center;
   font-size: 17px;
 }
 
 .filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-manufaturers,
@@ -915,7 +935,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 445px;
+  width: 355px;
+}
+
+.direction-button-box {
+  display: flex;
+  width: 43px;
+  margin-left: 45px;
 }
 
 .sort-button {
