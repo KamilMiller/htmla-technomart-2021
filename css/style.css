@@ -850,12 +850,13 @@ img {
 .good-cards-header {
   background-color: var(--biege);
   min-height: 38px;
-  padding: 5px 20px;
+  padding: 5px 15px 5px 20px;
   border-radius: 3px;
 }
 
 .good-cards-header {
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 20px;
 }
@@ -864,6 +865,7 @@ img {
 .good-cards-name {
   font-weight: normal;
   font-size: 13px;
+  margin-right: auto;
 }
 
 .filter-group-name {
@@ -872,12 +874,31 @@ img {
   line-height: 30px;
 }
 
+.scrollbox {
+  background-color: var(--biege);
+  height: 80px;
+  border-radius: 3px;
+}
+
+.price-bracket {
+  display: flex;
+  justify-content: space-between;
+}
+
 .price-field {
+  width: 95px;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--biege);
+  text-align: center;
   font-size: 17px;
 }
 
 .filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-manufaturers,
@@ -908,6 +929,19 @@ img {
 .filter-button:active {
   background-color: var(--basic-grey);
   border: 1px solid var(--active-red);
+}
+
+.sort-button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 355px;
+}
+
+.direction-button-box {
+  display: flex;
+  width: 43px;
+  margin-left: 45px;
 }
 
 .sort-button {
