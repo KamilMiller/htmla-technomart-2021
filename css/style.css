@@ -291,7 +291,7 @@ img {
 
 .title-wrapper {
   display: flex;
-  height: 100%;
+  /* height: 100%; */
   align-items: center;
   padding: 20px 30px;
   box-sizing: border-box;
@@ -527,16 +527,15 @@ img {
   left: 191px;
 }
 
-.new-assortment-item::after,
-.new-offers-item::after,
-.new-goods-item::after {
+.new-item::after {
   content: 'new';
   position: absolute;
   top: 8px;
-  left: 228px;
+  right: -27px;
   width: 100px;
   height: 30px;
   padding-top: 8px;
+  z-index: 5;
   box-sizing: border-box;
   background-color: var(--basic-red);
   text-align: center;
@@ -924,6 +923,10 @@ img {
   height: 100%;
 }
 
+.manufacturers-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 .manufacturers-item:active {
   opacity: 0.5;
 }
@@ -961,15 +964,20 @@ img {
 }
 
 .services-selector {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  display: grid;
-  grid-template-columns: 240px;
-  grid-template-rows: 62px 62px 62px;
+  position: relative;
   padding: 38px 60px 98px 0;
 }
 
+.services-selector-shadow {
+  position: absolute;
+  top: -5px;
+  right: 60px;
+  z-index: 3;
+}
+
 .services-control {
+  width: 100%;
+  min-height: 62px;
   padding: 10px 22px 18px 22px;
   border: none;
   background-color: var(--basic-blue);
@@ -1171,7 +1179,6 @@ img {
 
 .good-cards-header {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 20px;
 }
@@ -1534,9 +1541,8 @@ img {
 
 .feedback-modal {
   display: grid;
-  grid-template-rows: max-content max-content 112px;
+  /* grid-template-rows: max-content max-content 112px; */
   width: 620px;
-  /* min-height: 430px; */
   outline: 2px dashed blue;
 }
 
@@ -1547,7 +1553,6 @@ img {
 
 
 .feedback-modal-body {
-  /* min-height: 235px; */
   margin-top: 4px;
   margin-bottom: 37px;
 }
@@ -1572,14 +1577,10 @@ img {
 }
 
 .feedback-form-string:first-child {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   padding-right: 5px;
 }
 
 .feedback-form-string:nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
   padding-left: 5px;
 }
 
@@ -1591,11 +1592,10 @@ img {
 
 .feedback-form-message {
   grid-column: 1 / -1;
-  grid-row: 2 / -1;
 }
 
 .feedback-form-textarea {
-  width: 460px;
+  width: 100%;
   min-height: 114px;
   padding: 6px 12px;
 }
