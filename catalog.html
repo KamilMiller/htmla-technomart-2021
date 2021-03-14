@@ -22,31 +22,49 @@
             <img src="img/svg/sitelogomain.svg" width="108" height="18" alt="Логотип Техномарт">
           </a>
           <form class="search-form">
-            <input class="search-button" type="submit" value="Найти">
-            <input class="search-query-string" type="search" placeholder="Поиск:">
+            <label class="search-icon">
+              <input class="search-query-string" type="search" placeholder="Поиск:">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+              </svg>
+            </label>
           </form>
-          <a class="bookmarks-counter" href="#">Закладки: <span>0</span></a>
-          <a class="cart-counter" href="#">Корзина: <span>0</span></a>
-          <a class="checkout-button" href="#">Оформть заказ</a>
+          <a class="bookmarks-counter" href="#">
+            <img src="img/svg/iconbookmark.svg" width="14" height="15">
+            Закладки:<span>0</span></a>
+          <a class="cart-counter goods-in-cart" href="#">
+            <img src="img/svg/iconcart.svg" width="15" height="15">
+            Корзина:<span>10</span></a>
+          <a class="checkout-button" href="#">Оформить заказ</a>
         </div>
       </div>
 
       <div class="page-header-inner">
         <div class="page-header-body">
           <div class="title-wrapper">
-            <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <h1 class="main-title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           </div>
           <div class="page-header-contacts">
-            <a class="page-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <div class="page-header-phone-box">
+              <a class="page-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
             <address class="page-header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
-          <div class="profile">
-            <a class="profile-button profile-button-settings" href="#">
-              <img src="https://via.placeholder.com/20x18" alt="Иконка Профиля">Джавшан Рамшутович
-            </a>
-            <a class="profile-exit" href="#">
-              <img src="https://via.placeholder.com/20x17" alt="Выход">
-            </a>
+          <div class="profile-menu">
+            <div class="profile-settings">
+              <a class="profile-name" href="#">
+                <svg class="iconuser" width="20" height="18" viewBox="0 0 20 18" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z"/>
+                </svg>
+                Равшан Джамшутович
+              </a>
+              <a class="profile-exit" href="#">
+                <svg width="20" height="17" viewBox="0 0 20 17" fill="#C5C5C5" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z"/>
+                  <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z"/>
+                </svg>
+              </a>
+            </div>
             <div class="profile-options">
               <a class="profile-options-item" href="#">Мои заказы</a>
               <a class="profile-options-item" href="#">Личный кабинет</a>
@@ -85,7 +103,13 @@
 
       <ul class="breadcrumbs">
         <li class="breadcrumbs-link">
-          <a href="index.html"><span class="visually-hidden">Главная</span></a>
+          <a href="index.html">
+            <span class="visually-hidden">Главная</span>
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE"/>
+              <path d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z" fill="#C1C6CE"/>
+            </svg>
+          </a>
         </li>
         <li class="breadcrumbs-link">
           <a href="#">Каталог</a>
@@ -105,56 +129,49 @@
       <div class="catalog-wrapper">
 
         <section class="filters">
-          <div class="filters-header">
-            <h3 class="filters-name">Фильтр:</h3>
+          <div class="filter-header">
+            <h3 class="filter-name">Фильтр:</h3>
           </div>
           <form class="filter" name="filter" action="https://echo.htmlacademy.ru/">
             <fieldset class="filter-group">
               <legend class="filter-group-name">Цена:</legend>
               <div class="scrollbox">
-                <div class="scrollbox-scale"></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
+                <div class="scrollbox-scale-line">
+                  <div class="scrollbox-scale" style="left:0%; width:87%"></div>
+                  <div class="toggle min-toggle" style="left:0%"></div>
+                  <div class="toggle max-toggle" style="left:87%"></div>
+                </div>
               </div>
-              <p class="price-bracket">
+              <div class="price-bracket">
                 <label class="visually-hidden" for="min-price">От</label>
                 <input class="price-field" name="price-value" id="min-price" type="text" value="0">
+                <span>—</span>
                 <label class="visually-hidden" for="max-price">До</label>
-                <input class="price-field" name="price-value" id="max-price" type="text" value="30 000">
-              </p>
+                <input class="price-field" name="price-value" id="max-price" type="text" value="30000">
+              </div>
             </fieldset>
             <fieldset class="filter-group">
               <legend class="filter-group-name">Производители:</legend>
               <ul class="filter-manufaturers">
                 <li class="filter-manufaturers-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-checkbox" name="manufacturer" type="checkbox" checked>
-                    Bosch
-                  </label>
+                  <input class="filter-option filter-checkbox visually-hidden" id="filter-bosch" name="manufacturer-bosch" type="checkbox" checked>
+                  <label class="filter-option-name" for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-manufaturers-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-checkbox" name="manufacturer" type="checkbox">
-                    Интерскол
-                  </label>
+                  <input class="filter-option filter-checkbox visually-hidden" id="filter-interskol" name="manufacturer-interskol" type="checkbox">
+                  <label class="filter-option-name" for="filter-interskol">Интерскол</label>
                 </li>
                 <li class="filter-manufaturers-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-checkbox" name="manufacturer" type="checkbox" checked>
-                    Makita
-                  </label>
+                  <input class="filter-option filter-checkbox visually-hidden" id="filter-makita" name="manufacturer-makita" type="checkbox" checked>
+                  <label class="filter-option-name" for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-manufaturers-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-checkbox" name="manufacturer" type="checkbox">
-                    DeWalt
-                  </label>
+                  <input class="filter-option filter-checkbox visually-hidden" id="filter-dewalt" name="manufacturer-dewalt" type="checkbox">
+                  <label class="filter-option-name" for="filter-dewalt">DeWalt</label>
                 </li>
                 <li class="filter-manufaturers-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-checkbox" name="manufacturer" type="checkbox">
-                    Hitachi
-                  </label>
+                  <input class="filter-option filter-checkbox visually-hidden" id="filter-hitachi" name="manufacturer-hitachi" type="checkbox">
+                  <label class="filter-option-name" for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -162,16 +179,12 @@
               <legend class="filter-group-name">Питание:</legend>
               <ul class="filter-power_type">
                 <li class="filter-power_type-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-radio" name="power-type" type="radio" value="battery-supply" checked>
-                    Аккумуляторные
-                  </label>
+                  <input class="filter-option filter-radio visually-hidden" id="filter-battery" name="power-type" type="radio" value="battery-supply" checked>
+                  <label class="filter-option-name" for="filter-battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-power_type-item">
-                  <label class="filter-option-name">
-                    <input class="filter-option filter-radio" name="power-type" type="radio" value="mains-supply">
-                    Сетевые
-                  </label>
+                  <input class="filter-option filter-radio visually-hidden" id="filter-mains" name="power-type" type="radio" value="mains-supply">
+                  <label class="filter-option-name" for="filter-mains">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
@@ -188,11 +201,9 @@
               <a class="sort-button" href="#">По функционалу</a>
             </div>
             <div class="direction-button-box">
-              <button class="sort-direction-button" type="button">
-                <span>↑</span>
+              <button class="sort-direction-button ascending sort-direction-active" type="button" aria-label="По возрастанию">
               </button>
-              <button class="sort-direction-button" type="button">
-                <span>↓</span>
+              <button class="sort-direction-button descending" type="button" aria-label="По убыванию">
               </button>
             </div>
           </div>
@@ -225,7 +236,7 @@
               <p class="price"><s>30500 Р.</s></p>
               <p class="new-price"><b>22500 Р.</b></p>
             </article>
-            <article class="goods-item">
+            <article class="goods-item new-item">
               <div class="goods-item-inner">
                 <div class="goods-picture-wrapper">
                   <img class="goods-item-picture" src="img/jpg/bosch6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
@@ -239,7 +250,7 @@
               <p class="price"><s>30500 Р.</s></p>
               <p class="new-price"><b>22500 Р.</b></p>
             </article>
-            <article class="goods-item">
+            <article class="goods-item new-item">
               <div class="goods-item-inner">
                 <div class="goods-picture-wrapper">
                   <img class="goods-item-picture" src="img/jpg/bosch3000x2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -267,7 +278,7 @@
               <p class="price"><s>30500 Р.</s></p>
               <p class="new-price"><b>22500 Р.</b></p>
             </article>
-            <article class="goods-item goods-item-not-sale">
+            <article class="goods-item goods-item-not-sale new-item">
               <div class="goods-item-inner">
                 <div class="goods-picture-wrapper">
                   <img class="goods-item-picture" src="img/jpg/bosch3000x2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -281,7 +292,7 @@
               <p class="price"><s>22500 Р.</s></p>
               <p class="new-price"><b>12500 Р.</b></p>
             </article>
-            <article class="goods-item">
+            <article class="goods-item new-item">
               <div class="goods-item-inner">
                 <div class="goods-picture-wrapper">
                   <img class="goods-item-picture" src="img/jpg/bosch3000x2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
@@ -309,7 +320,7 @@
               <p class="price"><s>30500 Р.</s></p>
               <p class="new-price"><b>22500 Р.</b></p>
             </article>
-            <article class="goods-item goods-item-not-sale">
+            <article class="goods-item goods-item-not-sale new-item">
               <div class="goods-item-inner">
                 <div class="goods-picture-wrapper">
                   <img class="goods-item-picture" src="img/jpg/bosch3000x2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -432,8 +443,16 @@
 
     <!-- Окно сообщения о добавлении товара в корзину -->
     <div class="modal cart-message-modal">
+      <button class="modal-close" type="button" aria-label="Закрыть">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+        </svg>
+      </button>
       <div class="cart-message-modal-body">
-        <button class="modal-close" type="button">Закрыть</button>
+        <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z" fill="#63A63E"/>
+          <path d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z" fill="white"/>
+        </svg>
         <p class="cart-message-text">Товар добавлен в корзину!</p>
       </div>
       <div class="modal-buttons">
