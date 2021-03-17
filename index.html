@@ -115,12 +115,12 @@
           </li>
         </ul>
         <div class="goods-slider">
-          <div class="slide">
+          <div class="slide slide-1">
             <h4>Перфораторы</h4>
             <p class="slide-slogan">Настоящие мужские игрушки</p>
             <a class="button slide-link" href="catalog.html">Открыть каталог</a>
           </div>
-          <div class="slide hidden-slide">
+          <div class="slide slide-2 hidden-slide">
             <h4>Дрели</h4>
             <p class="slide-slogan">Соседям на радость!</p>
             <a class="button slide-link" href="catalog.html">Открыть каталог</a>
@@ -272,11 +272,11 @@
           <div class="services-slider">
             <div class="services-slide delivery services-slide-visible">
               <h3 class="section-title">Доставка</h3>
-              <p class="services-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              <p class="services-content">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
             </div>
             <div class="services-slide guarantee">
               <h3 class="section-title">Гарантия</h3>
-              <p class="services-content">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              <p class="services-content">Если купленный у нас товар поломается или заискрит, а&nbsp;также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
             </div>
             <div class="services-slide credit">
               <h3 class="section-title">Кредит</h3>
@@ -381,7 +381,7 @@
             </div>
             <div class="feedback-link">
               <p>Разработано —
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
               </p>
             </div>
           </div>
@@ -390,7 +390,7 @@
     </footer>
 
     <!-- Окно с формой обратной связи -->
-    <section class="modal feedback-modal modal-hidden">
+    <section class="modal feedback-modal">
       <button class="modal-close feedback-close" type="button" aria-label="Закрыть">
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
@@ -419,7 +419,7 @@
     </section>
 
     <!-- Окно с картой -->
-    <section class="modal map-modal modal-hidden">
+    <section class="modal map-modal">
       <div class="map-modal-inner">
         <button class="modal-close map-close" type="button" aria-label="Закрыть">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,6 +429,26 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.599115326632!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615822943470!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
+
+    <!-- Окно сообщения о добавлении товара в корзину -->
+    <div class="modal cart-message-modal">
+      <button class="modal-close cart-message-cancel" type="button" aria-label="Закрыть">
+        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+        </svg>
+      </button>
+      <div class="cart-message-modal-body">
+        <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z" fill="#63A63E"/>
+          <path d="M49.641 21.066C49.2498 20.6773 48.6181 20.6773 48.227 21.066L29.788 39.504C29.3968 39.8928 28.7651 39.8928 28.374 39.504L20.234 31.365C19.8428 30.9763 19.2111 30.9763 18.82 31.365L15.285 34.9C14.8962 35.2912 14.8962 35.9228 15.285 36.314L28.374 49.404C28.7651 49.7928 29.3968 49.7928 29.788 49.404L33.324 45.868L34.738 44.454L53.176 26.016C53.5647 25.6248 53.5647 24.9932 53.176 24.602L49.641 21.066Z" fill="white"/>
+        </svg>
+        <p class="cart-message-text">Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-buttons">
+        <a class="button modal-checkout-button" href="#">Оформить заказ</a>
+        <button class="button cart-message-close" type="button">Продолжить покупки</button>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
 

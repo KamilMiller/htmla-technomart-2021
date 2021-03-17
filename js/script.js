@@ -8,6 +8,11 @@ let feedbackClose = document.querySelector('.feedback-close');
 let map = document.querySelector('.map-modal');
 let mapOpen = document.querySelector('.contact-information-map');
 let mapClose = document.querySelector('.map-close');
+let cartMessage = document.querySelector('.cart-message-modal');
+let cartMessageOpen = document.querySelectorAll('.buy-button');
+let cartMessageCancel = document.querySelector('.cart-message-cancel');
+let modalCheckoutButton = document.querySelector('.modal-checkout-button');
+let cartMessageClose = document.querySelector('.cart-message-close');
 
 // Закрытие окон.
 
@@ -15,18 +20,19 @@ let onModalEscPress = function (evt) {
   if (evt.key === ESC_KEY) {
     closeFeedback();
     closeMap();
+    closeCartMessage();
   }
 };
 
 // Форма обратной связи.
 
 let openFeedback = function () {
-  feedback.classList.remove('modal-hidden');
+  feedback.classList.add('modal-show');
   document.addEventListener('keydown', onModalEscPress);
 };
 
 let closeFeedback = function () {
-  feedback.classList.add('modal-hidden');
+  feedback.classList.remove('modal-show');
   document.removeEventListener('keydown', onModalEscPress);
 };
 
@@ -54,12 +60,12 @@ feedbackClose.addEventListener('keydown', function (evt) {
 // Карта.
 
 let openMap = function () {
-  map.classList.remove('modal-hidden');
+  map.classList.add('modal-show');
   document.addEventListener('keydown', onModalEscPress);
 };
 
 let closeMap = function () {
-  map.classList.add('modal-hidden');
+  map.classList.remove('modal-show');
   document.removeEventListener('keydown', onModalEscPress);
 };
 
@@ -81,5 +87,59 @@ mapClose.addEventListener('click', function () {
 mapClose.addEventListener('keydown', function (evt) {
   if (evt.key === ENTER_KEY) {
     closeMap();
+  }
+});
+
+// Окно сообщения о добавлении товара в корзину.
+
+let openCartMessage = function () {
+  cartMessage.classList.add('modal-show');
+  document.addEventListener('keydown', onModalEscPress);
+};
+
+let closeCartMessage = function () {
+  cartMessage.classList.remove('modal-show');
+  document.removeEventListener('keydown', onModalEscPress);
+};
+
+for (let i = 0; i < cartMessageOpen.length; i++) {
+  cartMessageOpen[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    openCartMessage();
+  });
+  cartMessageOpen[i].addEventListener('keydown', function (evt) {
+    if (evt.key === ENTER_KEY) {
+      openCartMessage();
+    }
+  });
+};
+
+cartMessageCancel.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+cartMessageCancel.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
+  }
+});
+
+modalCheckoutButton.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+modalCheckoutButton.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
+  }
+});
+
+cartMessageClose.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+cartMessageClose.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
   }
 });
