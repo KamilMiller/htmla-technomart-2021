@@ -18,11 +18,65 @@ let cartMessageClose = document.querySelector('.cart-message-close');
 
 let onModalEscPress = function (evt) {
   if (evt.key === ESC_KEY) {
+    closeCartMessage();
     closeFeedback();
     closeMap();
-    closeCartMessage();
   }
 };
+
+// Окно сообщения о добавлении товара в корзину.
+
+let openCartMessage = function () {
+  cartMessage.classList.add('modal-show');
+  document.addEventListener('keydown', onModalEscPress);
+};
+
+let closeCartMessage = function () {
+  cartMessage.classList.remove('modal-show');
+  document.removeEventListener('keydown', onModalEscPress);
+};
+
+for (let i = 0; i < cartMessageOpen.length; i++) {
+  cartMessageOpen[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    openCartMessage();
+  });
+  cartMessageOpen[i].addEventListener('keydown', function (evt) {
+    if (evt.key === ENTER_KEY) {
+      openCartMessage();
+    }
+  });
+};
+
+cartMessageCancel.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+cartMessageCancel.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
+  }
+});
+
+modalCheckoutButton.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+modalCheckoutButton.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
+  }
+});
+
+cartMessageClose.addEventListener('click', function () {
+  closeCartMessage();
+});
+
+cartMessageClose.addEventListener('keydown', function (evt) {
+  if (evt.key === ENTER_KEY) {
+    closeCartMessage();
+  }
+});
 
 // Форма обратной связи.
 
@@ -90,56 +144,3 @@ mapClose.addEventListener('keydown', function (evt) {
   }
 });
 
-// Окно сообщения о добавлении товара в корзину.
-
-let openCartMessage = function () {
-  cartMessage.classList.add('modal-show');
-  document.addEventListener('keydown', onModalEscPress);
-};
-
-let closeCartMessage = function () {
-  cartMessage.classList.remove('modal-show');
-  document.removeEventListener('keydown', onModalEscPress);
-};
-
-for (let i = 0; i < cartMessageOpen.length; i++) {
-  cartMessageOpen[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    openCartMessage();
-  });
-  cartMessageOpen[i].addEventListener('keydown', function (evt) {
-    if (evt.key === ENTER_KEY) {
-      openCartMessage();
-    }
-  });
-};
-
-cartMessageCancel.addEventListener('click', function () {
-  closeCartMessage();
-});
-
-cartMessageCancel.addEventListener('keydown', function (evt) {
-  if (evt.key === ENTER_KEY) {
-    closeCartMessage();
-  }
-});
-
-modalCheckoutButton.addEventListener('click', function () {
-  closeCartMessage();
-});
-
-modalCheckoutButton.addEventListener('keydown', function (evt) {
-  if (evt.key === ENTER_KEY) {
-    closeCartMessage();
-  }
-});
-
-cartMessageClose.addEventListener('click', function () {
-  closeCartMessage();
-});
-
-cartMessageClose.addEventListener('keydown', function (evt) {
-  if (evt.key === ENTER_KEY) {
-    closeCartMessage();
-  }
-});

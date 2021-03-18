@@ -1428,10 +1428,8 @@ img {
   min-height: 26px;
 }
 
-.filter-checkbox + .filter-option-name::before,
-.filter-checkbox + .filter-option-name::after,
-.filter-radio + .filter-option-name::before,
-.filter-radio + .filter-option-name::after {
+.filter-option + .filter-option-name::before,
+.filter-option + .filter-option-name::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1439,6 +1437,12 @@ img {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0% 0%;
+  opacity: 0.7;
+}
+
+.filter-option:focus + .filter-option-name {
+  /* outline: 1px solid var(--text-grey); */
+  font-weight: bold;
 }
 
 .filter-checkbox + .filter-option-name::before,
@@ -1470,13 +1474,23 @@ img {
   background-image: url("../img/svg/checkboxon.svg");
 }
 
+.filter-checkbox:not(:checked) + .filter-option-name::after,
+.filter-radi:not(:checked) + .filter-option-name::after {
+  display: none;
+}
+
 .filter-radio:checked + .filter-option-name::after {
   background-image: url("../img/svg/radioon.svg");
 }
 
-.filter-checkbox:not(:checked) + .filter-option-name::after,
-.filter-radi:not(:checked) + .filter-option-name::after {
-  display: none;
+.filter-option-name:hover::before,
+.filter-option-name:hover::after {
+  opacity: 1;
+}
+
+.filter-option:disabled + .filter-option-name::before,
+.filter-option:disabled + .filter-option-name::after {
+  opacity: 0.3;
 }
 
 .filter-power_type {
@@ -1547,6 +1561,10 @@ img {
   border-right: 6px solid transparent;
   cursor: pointer;
   outline: none;
+}
+
+.sort-direction-button:focus {
+  outline: auto;
 }
 
 .ascending {
@@ -1971,4 +1989,25 @@ img {
 
 .modal-show {
   display: grid;
+  animation: bounce 0.6s;
+}
+
+/* Анимация форм */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -300%);
+  }
+
+  70% {
+    transform: translate(-50%, -52%);
+  }
+
+  90% {
+    transform: translate(-50%, -49%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
