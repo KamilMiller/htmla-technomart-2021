@@ -30,6 +30,14 @@
   --brown: #F9F5F0;
   --socials-blue: #212A3A;
   --hover-login: #3D546F;
+  --icon-active: rgba(255, 255, 255, 0.5);
+  --offers-link: rgba(255, 255, 255, 0.3);
+  --offers-link-hover: rgba(197, 197, 197, 0.3);
+  --offers-link-active: rgba(169, 169, 169, 0.3);
+  --cards-shadow: rgba(0, 0, 0, 0.3);
+  --services-control-border: #405069;
+  --toggle-shadow: rgba(171, 171, 171, 0.3);
+  --modal-shadow: rgba(0, 0, 0, 0.7);
 }
 
 /* Глобальные стили */
@@ -299,7 +307,7 @@ img {
 .bookmarks-counter:active,
 .cart-counter:active,
 .checkout-button:active {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--icon-active);
 }
 
 .page-header-body {
@@ -418,7 +426,7 @@ img {
   padding-left: 50px;
 }
 
-.iconuser {
+.icon-user {
   position: absolute;
   top: 13px;
   left: 15px;
@@ -432,13 +440,13 @@ img {
 }
 
 .sign-in:hover svg,
-.profile-name:hover .iconuser,
+.profile-name:hover .icon-user,
 .profile-exit:hover svg {
   fill: var(--hover-login);
 }
 
 .sign-in:active svg,
-.profile-name:active .iconuser,
+.profile-name:active .icon-user,
 .profile-exit:active svg {
   fill: var(--text-active-grey);
 }
@@ -519,7 +527,6 @@ img {
 }
 
 .main-navigation-link {
-  display: inline-block;
   width: 100%;
   height: inherit;
   padding-top: 17px;
@@ -656,17 +663,17 @@ img {
   color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--offers-link);
 }
 
 .assortment-link:hover,
 .offers-link:hover {
-  background-color: rgba(197, 197, 197, 0.3);
+  background-color: var(--offers-link-hover);
 }
 
 .assortment-link:active,
 .offers-link:active {
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--offers-link-active);
 }
 
 .goods-slider {
@@ -855,7 +862,7 @@ img {
 }
 
 .goods-item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px var(--cards-shadow);
 }
 
 .goods-item:hover .goods-item-buttons {
@@ -1008,7 +1015,7 @@ img {
 }
 
 .manufacturers-item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px var(--cards-shadow);
 }
 
 .manufacturers-item:active {
@@ -1069,7 +1076,7 @@ img {
   width: 100%;
   min-height: 62px;
   padding: 10px 22px 18px 22px;
-  border-top: 1px solid #405069;
+  border-top: 1px solid var(--services-control-border);
   border-bottom: 1px solid var(--basic-dark-blue);
   border-left: none;
   border-right: none;
@@ -1363,7 +1370,7 @@ img {
   border-radius: 50%;
   box-sizing: content-box;
   background-color: var(--text-grey);
-  box-shadow: 0 3px 0 0 rgba(171, 171, 171, 0.3);
+  box-shadow: 0 3px 0 0 var(--toggle-shadow);
   transform: translate(-50%, -55%);
   cursor: pointer;
 }
@@ -1404,21 +1411,21 @@ img {
   border: none;
 }
 
-.filter-manufaturers,
+.filter-manufacturers,
 .filter-power_type {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.filter-manufaturers {
+.filter-manufacturers {
   margin-top: 15px;
   margin-bottom: 18px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--card-border-grey);
 }
 
-.filter-manufaturers-item,
+.filter-manufacturers-item,
 .filter-power_type-item {
   margin-bottom: 16px;
 }
@@ -1437,7 +1444,7 @@ img {
           user-select: none;
 }
 
-.filter-manufaturers-item .filter-option-name {
+.filter-manufacturers-item .filter-option-name {
   min-height: 23px;
 }
 
@@ -1458,7 +1465,6 @@ img {
 }
 
 .filter-option:focus + .filter-option-name {
-  /* outline: 1px solid var(--text-grey); */
   font-weight: bold;
 }
 
@@ -1628,6 +1634,7 @@ img {
 
 .pagination-item a {
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   height: 38px;
   margin-right: 10px;
@@ -1845,7 +1852,6 @@ img {
 .modal {
   position: fixed;
   top: 50%;
-  /* bottom: auto; */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
@@ -1853,7 +1859,7 @@ img {
   margin: auto;
   border-top: 7px solid var(--basic-red);
   background-color: var(--white);
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 30px 50px var(--modal-shadow);
 }
 
 .modal-buttons {
@@ -1954,7 +1960,6 @@ img {
 /* Окно сообщения о добавлении товара в корзину */
 
 .cart-message-modal {
-  /* display: grid; */
   width: 620px;
   min-height: 282px;
   box-sizing: border-box;
